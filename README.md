@@ -1,8 +1,10 @@
 # Bitcoin float gap — public package skeleton
 
-Status: **origin set, retrieval not yet confirmed**. Methodology SHA-256 of `methodology/EQUATIONS.md`: `0d696d010b1ef15bd10b1bfa2e49318b1e9e0935e1efac05e69b91c2bdb4b18f`.
+Status: **public origin retrieved 2026-11-13T19:54:02Z**. Methodology SHA-256 of `methodology/EQUATIONS.md`: `0d696d010b1ef15bd10b1bfa2e49318b1e9e0935e1efac05e69b91c2bdb4b18f`.
 
-Canonical snapshot: `https://floppykit.github.io/btc-float-public/float.json`. Cloudflare Pages was the named host. `wrangler whoami` was not logged in on 2026-11-13, so this origin is GitHub Pages. A mirror is still allowed. No billing document was returned (`GET /user/settings/billing/actions`, `/packages`, and `/shared-storage` were HTTP 404). No dollar amount is stated. This is not a price target, not an offer, and not a claim that a path will happen.
+Canonical snapshot: `https://floppykit.github.io/btc-float-public/float.json`. Retrieved at **2026-11-13T19:54:02Z** (HTTP 200). Body SHA-256 `f30a7fbab2135e8596eda71a28df3fa3416318b1011a999816ac3c83ae7ec2fc`, identical to `docs/float.json` in commit `6e6772a`. Response carried methodology hash `0d696d010b1ef15bd10b1bfa2e49318b1e9e0935e1efac05e69b91c2bdb4b18f`, float start 6,095,921.875, remaining null, three bars `insufficient_series`.
+
+Cloudflare Pages was the named host. `wrangler whoami` was not logged in, so this origin is GitHub Pages (`docs/` on `main`). A mirror is still allowed. No billing document was returned (`GET /user/settings/billing/actions`, `/packages`, and `/shared-storage` were HTTP 404). No dollar amount is stated. This is not a price target, not an offer, and not a claim that a path will happen.
 
 Machine-readable twins, same directory:
 
@@ -177,4 +179,4 @@ Stage 2 reprint matches the saved extracts: `python3 scripts/reprint_audit.py`. 
 
 Stage 3 is on localhost only: `http://127.0.0.1:8765/float.json` and `http://127.0.0.1:8765/float.txt`. Bars are `insufficient_series`. `http://127.0.0.1:8765/float.diff` reports no partial-flag crossing. Not a public host.
 
-Not done: a non-null BTC absorption series, a public URL, distribution.
+Public origin is the URL above. Not done: a non-null BTC absorption series, distribution.

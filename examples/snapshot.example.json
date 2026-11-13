@@ -1,0 +1,65 @@
+{
+  "schema_version": "btc-float-snapshot/v0",
+  "generated_at": "2026-11-13T17:16:00Z",
+  "methodology_sha256": "0d696d010b1ef15bd10b1bfa2e49318b1e9e0935e1efac05e69b91c2bdb4b18f",
+  "float": {
+    "definition_id": "galaxy-mind-strict-inplay-complete-2026-10-10",
+    "as_of": "2026-10-10T00:15:12.448Z",
+    "partial": true,
+    "float_start_btc": 6095921.875,
+    "float_remaining_btc": null,
+    "cumulative_sticky_btc": null,
+    "float_pct_removed": null
+  },
+  "flow": {
+    "window": "30d",
+    "etf_net_flow_usd": -2780200000,
+    "etf_non_redeemed_usd": null,
+    "self_custody_btc": null,
+    "etf_net_btc": null,
+    "corporate_net_btc": null,
+    "monthly_sticky_usd": null,
+    "trailing_90d_btc_per_month": null
+  },
+  "bars": [
+    {
+      "id": "zone_1m_2026usd",
+      "label": "$1M zone (2026 dollars) — label only until a BTC target is published",
+      "target_btc_removal": null,
+      "months_to_target": null,
+      "state": "insufficient_series"
+    },
+    {
+      "id": "zone_10m_2026usd",
+      "label": "$10M zone (2026 dollars) — label only until a BTC target is published",
+      "target_btc_removal": null,
+      "months_to_target": null,
+      "state": "insufficient_series"
+    },
+    {
+      "id": "zone_reserve_scale",
+      "label": "Reserve-scale marker — label only until a BTC target is published",
+      "target_btc_removal": null,
+      "months_to_target": null,
+      "state": "insufficient_series"
+    }
+  ],
+  "model": null,
+  "provenance": [
+    {
+      "id": "farside_all_data",
+      "url": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
+      "retrieved_at": "2026-11-13"
+    },
+    {
+      "id": "galaxy_mind_float_api",
+      "url": "https://galaxymind.space/api/float",
+      "retrieved_at": "2026-11-13T17:01:05.958Z"
+    },
+    {
+      "id": "block_10k_2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026012254/xyz-20251231.htm",
+      "retrieved_at": "2026-11-13"
+    }
+  ]
+}

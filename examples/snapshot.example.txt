@@ -1,0 +1,22 @@
+btc-float-snapshot/v0
+generated_at: 2026-11-13T17:16:00Z
+methodology_sha256: 0d696d010b1ef15bd10b1bfa2e49318b1e9e0935e1efac05e69b91c2bdb4b18f
+float_definition: galaxy-mind-strict-inplay-complete-2026-10-10
+float_partial: true
+float_start_btc: 6095921.875
+float_start_as_of: 2026-10-10T00:15:12.448Z
+float_remaining_btc: null
+cumulative_sticky_btc: null
+float_pct_removed: null
+etf_net_flow_usd_last_30_sessions: -2780200000
+etf_non_redeemed_usd: null
+self_custody_btc: null
+etf_net_btc: null
+corporate_net_btc: null
+monthly_sticky_usd: null
+trailing_90d_btc_per_month: null
+bar.zone_1m_2026usd: insufficient_series
+bar.zone_10m_2026usd: insufficient_series
+bar.zone_reserve_scale: insufficient_series
+canonical_url: UNSET
+already_excluded_not_in_sticky: lost,governments,etfs,publicCompanies,lthOther

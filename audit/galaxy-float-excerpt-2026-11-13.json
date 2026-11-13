@@ -1,0 +1,60 @@
+{
+  "source": "https://galaxymind.space/api/float",
+  "retrieved_note": "fields copied from the public API response fetched 2026-11-13; full history not redistributed",
+  "asOf": "2026-11-13T00:15:13.028Z",
+  "composedAt": "2026-11-13T17:01:05.958Z",
+  "degraded": true,
+  "isFallback": false,
+  "dailyDelta": 375,
+  "current": {
+    "date": "2026-11-13",
+    "asOf": "2026-11-13T00:15:13.028Z",
+    "blockHeight": 975614,
+    "totalSupply": 21000000,
+    "minedSupply": 20111293.75,
+    "cohorts": {
+      "lost": 3000000,
+      "governments": null,
+      "etfs": null,
+      "publicCompanies": null,
+      "lthOther": 11000000,
+      "yetToMine": 888706.25
+    },
+    "inPlay": 6111293.75,
+    "partial": true
+  },
+  "yesterday": {
+    "date": "2026-11-12",
+    "asOf": "2026-11-12T00:15:12.908Z",
+    "blockHeight": 975494,
+    "totalSupply": 21000000,
+    "minedSupply": 20110918.75,
+    "cohorts": {
+      "lost": 3000000,
+      "governments": null,
+      "etfs": null,
+      "publicCompanies": null,
+      "lthOther": 11000000,
+      "yetToMine": 889081.25
+    },
+    "inPlay": 6110918.75,
+    "partial": true
+  },
+  "last_complete": {
+    "date": "2026-10-10",
+    "asOf": "2026-10-10T00:15:12.448Z",
+    "blockHeight": 970695,
+    "totalSupply": 21000000,
+    "minedSupply": 20095921.875,
+    "cohorts": {
+      "lost": 3000000,
+      "governments": 629722.16470407,
+      "etfs": 1536618.81639148,
+      "publicCompanies": 1064926.2,
+      "lthOther": 7768732.81890445,
+      "yetToMine": 904078.125
+    },
+    "inPlay": 6095921.875,
+    "partial": false
+  }
+}

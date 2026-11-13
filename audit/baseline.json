@@ -1,0 +1,139 @@
+{
+  "schema": "btc-float-audit-baseline/v0",
+  "retrieved_at": "2026-11-13T17:05:00Z",
+  "status": "stage-1-locked",
+  "methodology_sha256": "0d696d010b1ef15bd10b1bfa2e49318b1e9e0935e1efac05e69b91c2bdb4b18f",
+  "definition_id": "galaxy-mind-strict-inplay-complete-2026-10-10",
+  "not_a_forecast": true,
+  "spot": {
+    "usd": 68614,
+    "source": "https://api.coingecko.com/api/v3/coins/bitcoin",
+    "source_updated_at": "2026-11-13T16:55:44.000Z",
+    "cross_check": {
+      "mempool_space_usd": 68656,
+      "mempool_time_unix": 1794588902,
+      "source": "https://mempool.space/api/v1/prices",
+      "bitcointreasuries_page_usd": 68594,
+      "source_page": "https://bitcointreasuries.net/",
+      "note": "Three public prints within about 0.1%. Use the CoinGecko print for arithmetic in this file. Do not blend them."
+    }
+  },
+  "supply": {
+    "max_btc": 21000000,
+    "circulating_btc_coingecko": 20111481,
+    "mined_btc_blockchain_info": 20111550,
+    "blockchain_info_source": "https://api.blockchain.info/stats",
+    "block_height_mempool": 975695,
+    "block_height_source": "https://mempool.space/api/blocks/tip/height",
+    "subsidy_btc_per_block": 3.125,
+    "issuance_btc_per_day_at_144_blocks": 450,
+    "next_halving_height": 1050000,
+    "blocks_remaining_to_halving_from_galaxy_height_975614": 74386,
+    "days_remaining_at_144_blocks": 516.57
+  },
+  "float": {
+    "provider": "Galaxy Mind",
+    "provider_is_not": "Galaxy Digital",
+    "about": "https://galaxymind.space/about",
+    "page": "https://galaxymind.space/float",
+    "api": "https://galaxymind.space/api/float",
+    "glossary": "https://galaxymind.space/glossary/in-play",
+    "degraded_headline_2026_11_13": {
+      "in_play_btc": 6111293.75,
+      "partial": true,
+      "degraded": true,
+      "etfs_btc": null,
+      "governments_btc": null,
+      "public_companies_btc": null,
+      "lost_btc": 3000000,
+      "lth_other_btc": 11000000,
+      "mined_supply_btc": 20111293.75,
+      "block_height": 975614,
+      "as_of": "2026-11-13T00:15:13.028Z",
+      "do_not_cite_cohort_split": "The 11,000,000 lthOther figure equals the 2026-10-10 sum of lthOther+etfs+governments+publicCompanies. It is a folded placeholder, not a live long-term-holder census."
+    },
+    "last_complete_2026_10_10": {
+      "in_play_btc": 6095921.875,
+      "partial": false,
+      "mined_supply_btc": 20095921.875,
+      "block_height": 970695,
+      "as_of": "2026-10-10T00:15:12.448Z",
+      "lost_btc": 3000000,
+      "governments_btc": 629722.16470407,
+      "etfs_btc": 1536618.81639148,
+      "public_companies_btc": 1064926.2,
+      "lth_other_btc": 7768732.81890445,
+      "yet_to_mine_btc": 904078.125,
+      "identity": "minedSupply - lost - governments - etfs - publicCompanies - lthOther = inPlay = 6095921.875"
+    },
+    "definition_collision": "Galaxy Mind strict in-play already subtracts spot-ETF custody and public-company treasuries. A sticky-demand series that also subtracts new ETF creations and corporate adds from this float double-counts unless the series is dated after FloatStart and measures only the incremental change in those cohorts."
+  },
+  "etf_flows_farside": {
+    "page": "https://farside.co.uk/btc/",
+    "all_data": "https://farside.co.uk/bitcoin-etf-flow-all-data/",
+    "unit": "USD millions, net (creations minus redemptions). Not BTC. Not gross creations. Not a 'non-redeemed' series.",
+    "table_total_row_usd_millions": 54887,
+    "sum_of_displayed_daily_totals_usd_millions": 54886.5,
+    "rounding_note": "0.5 difference between the published Total row and the sum of 1-decimal daily cells. Cite the Total row. Do not 'correct' it.",
+    "first_session": "2024-01-11",
+    "last_complete_session": "2026-11-12",
+    "placeholder_session_excluded": "2026-11-13 row is dashes and a 0.0 total. Excluded from windows.",
+    "last_complete_day_usd_millions": -284.1,
+    "last_30_sessions_2026_10_02_to_2026_11_12_usd_millions": -2780.2,
+    "last_30_sessions_positive_usd_millions": 2100.7,
+    "last_30_sessions_negative_usd_millions": -4880.9,
+    "last_90_sessions_2026_07_09_to_2026_11_12_usd_millions": 3552.3,
+    "trailing_365_calendar_days_to_2026_11_12_usd_millions": -5305.6,
+    "sessions_parsed": 729,
+    "implication": "Cumulative net creations since launch are positive. The trailing 30 sessions and trailing year are negative. 'Sustained sticky ETF demand' is not the live state on this date."
+  },
+  "treasuries_page_2026_11_13": {
+    "source": "https://bitcointreasuries.net/",
+    "public_companies_btc_display": "1.238M",
+    "public_companies_count": 197,
+    "public_companies_usd_display": "$84.95B",
+    "public_companies_30d": "-1.2%",
+    "government_entities_btc": 645625,
+    "etfs_and_exchanges_btc": 1615524,
+    "defi_and_other_btc": 375179,
+    "not_interchangeable_with_galaxy": "BitcoinTreasuries 'ETFs and Exchanges' is a different bucket from Galaxy Mind 'etfs'. Do not subtract one from the other."
+  },
+  "exchange_balances_coinglass": {
+    "page": "https://www.coinglass.com/Balance",
+    "galaxy_page_citation": "~2.50M exchange reserves, attributed to CoinGlass on https://galaxymind.space/float",
+    "rendered_named_rows_sum_btc": 2594780.5,
+    "rendered_named_rows": 13,
+    "note": "Sum of the 13 named rows captured in the render (Coinbase Pro through Coinone). Not a site-published total. Table may continue. Do not reconcile to 2.50M by force."
+  },
+  "square_bitcoin_page": {
+    "url": "https://squareup.com/us/en/bitcoin",
+    "retrieved": "2026-11-13",
+    "verified_claims": [
+      "Lightning Network checkout",
+      "Settlement in bitcoin or USD",
+      "Bitcoin payments may be automatically enabled for eligible sellers; settlement preferences can be changed or the feature disabled in the Dashboard",
+      "Conversions: up to 50% of daily net card sales, 1% conversion fee",
+      "Currently supported for transactions up to $600"
+    ],
+    "fee_copy_conflict": [
+      "0% processing fee through 2026",
+      "zero processing fees until 2027",
+      "fee-free until 2027, and a flat 1% after that",
+      "0% fees through 2026, then 1% per transaction"
+    ],
+    "not_verified": [
+      "4.5M sellers",
+      "hundreds of thousands of live sites",
+      "a published default-on rate"
+    ]
+  },
+  "unverified_this_pass": [
+    "Glassnode liquidity cohorts",
+    "Strike and River on-ramp aggregates",
+    "Farside mirrors (Bitcoin Almanack, ByKaranteli)",
+    "Block Inc. seller census in a 10-K or 10-Q",
+    "Primary Jack Dorsey / Block shareholder-letter quotes",
+    "A BTC-denominated sticky absorption series",
+    "Any TargetBTCRemoval that corresponds to a $1M or $10M price"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "definition_id": "galaxy-mind-strict-inplay-complete-2026-10-10",
+  "residual_path": "equation",
+  "locked_at": "2026-11-13T17:16:00Z",
+  "methodology_file": "methodology/EQUATIONS.md",
+  "methodology_sha256": "0d696d010b1ef15bd10b1bfa2e49318b1e9e0935e1efac05e69b91c2bdb4b18f",
+  "hash_covers": "UTF-8 bytes of EQUATIONS.md only. This file is not inside the hash.",
+  "float_start_btc": 6095921.875,
+  "float_start_as_of": "2026-10-10T00:15:12.448Z",
+  "block_height": 970695,
+  "mined_supply_btc": 20095921.875,
+  "already_excluded_btc": {
+    "lost": 3000000,
+    "governments": 629722.16470407,
+    "etfs": 1536618.81639148,
+    "public_companies": 1064926.2,
+    "lth_other": 7768732.81890445
+  },
+  "already_excluded_sum_btc": 14000000,
+  "sticky_formula": "(E_t - E_0) + (C_t - C_0) + S_t",
+  "sticky_uses_levels_at_t0": false,
+  "float_remaining_formula": "FloatStart - cumulative_sticky_btc + issuance_since_start_btc",
+  "cumulative_sticky_btc": null,
+  "self_custody_btc": null,
+  "reason_null": "No complete post-t0 cohort delta, and no disjoint self-custody primary.",
+  "not_float_terms": [
+    "farside_usd_converted_to_btc",
+    "bitcointreasuries_public_company_level",
+    "coinglass_exchange_balances",
+    "glassnode_illiquid_or_lth",
+    "degraded_headline_6111293.75",
+    "block_bitcoin_investment_8883",
+    "square_seller_count_4_5_million"
+  ]
+}

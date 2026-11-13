@@ -1,0 +1,6 @@
+btc-float-diff/v0
+changes: 0
+current_partial: true
+prior_partial: true
+crossing: false
+note: no partial-flag crossing. partial=true is the stored state, not a change from false.

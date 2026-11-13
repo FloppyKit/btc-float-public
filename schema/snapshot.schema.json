@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/btc-float/snapshot.schema.json",
+  "title": "BTC float dashboard snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "methodology_sha256",
+    "float",
+    "flow",
+    "bars",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": { "const": "btc-float-snapshot/v0" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "methodology_sha256": {
+      "type": ["string", "null"],
+      "description": "Hex SHA-256 of the locked methodology file. Null until Stage 1 locks the text.",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "float": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["definition_id", "as_of", "partial", "float_start_btc", "float_remaining_btc", "cumulative_sticky_btc"],
+      "properties": {
+        "definition_id": { "type": "string" },
+        "as_of": { "type": "string", "format": "date-time" },
+        "partial": { "type": "boolean" },
+        "float_start_btc": { "type": ["number", "null"] },
+        "float_remaining_btc": { "type": ["number", "null"] },
+        "cumulative_sticky_btc": { "type": ["number", "null"] },
+        "float_pct_removed": { "type": ["number", "null"] }
+      }
+    },
+    "flow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["window", "etf_net_flow_usd", "etf_non_redeemed_usd", "self_custody_btc", "etf_net_btc", "corporate_net_btc", "monthly_sticky_usd", "trailing_90d_btc_per_month"],
+      "properties": {
+        "window": { "type": "string" },
+        "etf_net_flow_usd": { "type": ["number", "null"] },
+        "etf_non_redeemed_usd": { "type": ["number", "null"] },
+        "self_custody_btc": { "type": ["number", "null"] },
+        "etf_net_btc": { "type": ["number", "null"] },
+        "corporate_net_btc": { "type": ["number", "null"] },
+        "monthly_sticky_usd": { "type": ["number", "null"] },
+        "trailing_90d_btc_per_month": { "type": ["number", "null"] }
+      }
+    },
+    "bars": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "target_btc_removal", "state"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "target_btc_removal": { "type": ["number", "null"] },
+          "months_to_target": { "type": ["number", "null"] },
+          "state": { "enum": ["ok", "insufficient_series", "partial"] }
+        }
+      }
+    },
+    "model": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["kind", "is_forecast", "parameters"],
+      "properties": {
+        "kind": { "enum": ["linear_multiplier", "elasticity"] },
+        "is_forecast": { "const": false },
+        "parameters": { "type": "object" }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "url", "retrieved_at"],
+        "properties": {
+          "id": { "type": "string" },
+          "url": { "type": "string" },
+          "retrieved_at": { "type": "string" }
+        }
+      }
+    }
+  }
+}

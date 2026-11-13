@@ -1,0 +1,4 @@
+serve/server.pid
+serve/server.log
+serve/series.sqlite
+.DS_Store
